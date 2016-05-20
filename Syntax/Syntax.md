@@ -28,4 +28,4 @@ $ sass-convert style.sass style.scss
 
 [İçindekiler sayfasına geri dön ![BackArrow][backarrow]](https://github.com/sqlProvider/SASS-Lang)
 
-[backarrow]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/backarrow.png]
+[backarrow]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/backarrow.png
