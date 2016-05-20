@@ -26,3 +26,6 @@ $ sass-convert style.sass style.scss
 ```
 	Bu komut css dosyası oluşturmaz. SASS'tan SCSS'e veya SCSS'den SASS'a çevirme yapar.	
 
+[İçindekiler sayfasına geri dön ![BackArrow][backarrow]](https://github.com/sqlProvider/SASS-Lang)
+
+[backarrow]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/backarrow.png]
