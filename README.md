@@ -10,13 +10,12 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 
 ## İçindekiler
 
-* [**Syntax**](../master/Syntax/Syntax.md)
-* **SASS Kullanımı**
-	1. Plug-in
-	2. Önbellekleme
-	3. Ek Seçenekler
-	4. Syntax Seçimi
-	5. Encoding
+* [**Syntax**](../master/Documentation/Syntax.md)
+* [**SASS Kullanımı**](../master/Documentation/UsingSASS.md)
+	1. [NPM Projesi Oluşturma](../master/Documentation/UsingSASS.md)
+	2. [Önbellekleme](../master/Documentation/UsingSASS.md)
+	3. [Ek Seçenekler](../master/Documentation/UsingSASS.md)
+	5. [Encoding](../master/Documentation/UsingSASS.md)
 * **CSS**
 	1. İç İçe Kurallar
 	2. Evebeyn Refesansı: &
