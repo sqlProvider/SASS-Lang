@@ -16,10 +16,10 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 	2. [Önbellekleme](../master/Documentation/UsingSASS.md#Önbellekleme)
 	3. [Ek Seçenekler](../master/Documentation/UsingSASS.md#ek-seçenekler)
 	5. [Encoding](../master/Documentation/UsingSASS.md#encoding)
-* **CSS**
-	1. İç İçe Kurallar
-	2. Evebeyn Refesansı: &
-	3. İç İçe Özellikler
+* [**CSS**](../master/Documentation/CSS.md)
+	1. [İç İçe Kurallar](../master/Documentation/CSS.md#İç-İçe-kurallar)
+	2. [Evebeyn Refesansı: &](../master/Documentation/CSS.md#evebeyn-referansı-)
+	3. [İç İçe Özellikler](../master/Documentation/CSS.md#İç-İçe-Özellikler)
 * **Yorum Satırları**
 * **SASS Script**
 	1. İnteraktif Shell
