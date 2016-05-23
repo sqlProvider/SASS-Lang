@@ -187,7 +187,7 @@ Font özelliğini yazarken `:` den sonra CSS'te ki font özelliği gibi birkaç 
 ```
 
 --
-| [![Back][back]](UsingSASS.md) | [![Next][next]](#) |
+| [![Back][back]](UsingSASS.md) | [![Next][next]](CommentLines.md) |
 |-------|-----:|
 
 [back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png

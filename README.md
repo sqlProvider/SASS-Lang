@@ -20,7 +20,7 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 	1. [İç İçe Kurallar](../master/Documentation/CSS.md#İç-İçe-kurallar)
 	2. [Evebeyn Refesansı: &](../master/Documentation/CSS.md#evebeyn-referansı-)
 	3. [İç İçe Özellikler](../master/Documentation/CSS.md#İç-İçe-Özellikler)
-* **Yorum Satırları**
+* [**Yorum Satırları**](../master/Documentation/CommentLines.md)
 * **SASS Script**
 	1. İnteraktif Shell
 	2. Değişkenler: $
