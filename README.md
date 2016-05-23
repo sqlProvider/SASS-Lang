@@ -3,7 +3,7 @@
 ## Nedir?
 
 Sass CSS'in bir uzantısıdır. CSS dilini güçlü ve zarif şekilde yazmka için tasarlanmıştır. [Değişkenleri](#), [iç içe kuralları](#), [fonksiyonları](#), [satır içi importları](#) ve daha fazlasını
-CSS uyumlu bir sözdizimi ile kullanmanızı sağlar.
+CSS uyumlu bir sözdizimi ile kullanmanızı sağlar. 
 SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale getirir.
 
 
