@@ -185,3 +185,10 @@ Font özelliğini yazarken `:` den sonra CSS'te ki font özelliği gibi birkaç 
 		font-weight: bold;
 	}
 ```
+
+--
+| [![Back][back]](UsingSASS.md) | [![Next][next]](#) |
+|-------|-----:|
+
+[back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png
+[next]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/next.png

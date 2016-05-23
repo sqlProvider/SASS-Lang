@@ -173,4 +173,11 @@ Diğer seçeneklere [buradaki][OptionsLink] bağlantıdan ulaşabilirsiniz.
 Türkçe karakter sorunu günümüzde baş belası bir sorun olurken SASS varsayılan olarak dosyaları `UTF-8` olarak derler. Türkçe karakterler olduğu gibi kalır ekstradan iş yükü harcatmaz.
 
 
+--
+| [![Back][back]](Syntax.md) | [![Next][next]](CSS.md) |
+|-------|-----:|
+
+[back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png
+[next]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/next.png
+
 [OptionsLink]:http://sass-lang.com/documentation/file.SASS_REFERENCE.html#options

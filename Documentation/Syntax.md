@@ -26,9 +26,9 @@ $ sass-convert style.sass style.scss
 ```
 	Bu komut css dosyası oluşturmaz. SASS'tan SCSS'e veya SCSS'den SASS'a çevirme yapar.	
 
+--
 | [![Back][back]](https://github.com/sqlProvider/SASS-Lang) | [![Next][next]](UsingSASS.md) |
 |-------|-----:|
-
 
 [back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png
 [next]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/next.png
