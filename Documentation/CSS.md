@@ -1,7 +1,6 @@
 # 3. CSS 
 
-Projemiz tamam ve çalışma ortamımızı da ayarladık atık SASS ile nasıl CSS oluşturacağımızı öğrenmek kaldı.
-
+---
 ## 3.1 İç İçe Kurallar
 
 SASS iç içe kurallar tanımlamıza olanak tanır. Karmaşık CSS tanımlarını ortadan kaldırmak için geliştirilmiş bir özelliktir. SASS'ın en çok kullanılan özellliği diyebiliriz. Örneği inceleyecek olursak;
@@ -27,7 +26,7 @@ Yazdığımız satırlar derlendikten sonra aşağıdaki CSS'e çevrilir.
 		color: #000;
 	}
 ```
-
+--
 Bir başka kullanım olarak iç içe kuralları `,` ile ayırabiliriz;
 
 ```sass
@@ -53,8 +52,7 @@ Yazdığımız satırlar derlendikten sonra aşağıdaki CSS'e çevrilir.
 	}
 ```
 
---
-
+---
 ## 3.2 Evebeyn Referansı: &
 
 Yazdığımız bir kuralın içinden bir üstteki kurala etki etmek için `&` karakteri kullanılır. 
@@ -132,6 +130,7 @@ Yukarıdaki satırlarda `&` karakteri bir üstü yani `a` tagına referanstır. 
 
 Burada yeni bir ID'nin oluşmasının nedeni `$` karakterinin SASS tarafından `#main`'e dönüştürülmesidir.
 
+---
 ## 3.3 İç İçe Özellikler
 
 Kuralları iç içe yazabildiğimiz gibi özellikleri de iç içe yazabiliriz. 
@@ -158,7 +157,7 @@ Yazdığımız SASS kodlarında özellik mi yoksa kural mı olduğunu belirtmek 
 		background-position: 50% 50%;
 	}
 ```
-
+--
 Bir de `:` karakterini unuttuğumuzda derleneceği hali inceleyelim. SASS böyle bir durumda hata vermeyecektir ve derleyecektir. Yapılan hata mantıksal bir hatadır.
 ```css
 	#main background{
@@ -169,7 +168,6 @@ Bir de `:` karakterini unuttuğumuzda derleneceği hali inceleyelim. SASS böyle
 	}
 ```
 --
-
 İç içe özellik yazılırken farklı bir yöntem de kullanılabilir. Örneği inceleyim;
 ```sass
 	span{
@@ -186,7 +184,7 @@ Font özelliğini yazarken `:` den sonra CSS'te ki font özelliği gibi birkaç 
 	}
 ```
 
---
+---
 | [![Back][back]](UsingSASS.md) | [![Next][next]](CommentLines.md) |
 |-------|-----:|
 

@@ -21,7 +21,7 @@ Tanımladığımız değişkenleri nerede istersek kullanabiliriz.
 		width: $width;
 	}
 ```
----
+--
 
 Değişkenler sadece tanımlandığı seviyede ve alt seviyelerde kullanılabilir haldedir. 
 Eğer en dış seviyede bir değişken tanımlarsanız bütün seviyelerde kullanabilirsiniz. 
@@ -66,7 +66,6 @@ Değişkenler lokal olarak çalıştığı için böyle bir kullanıma izin veri
  * Diğer dillerden farklı olarak `-` kullanılabilirdir.
  
 ---
-
 ## 5.2 Veri Tipleri
 
 SASS Script 7 ana değişken tipini destekler;
@@ -242,3 +241,10 @@ Yukarıdaki map örneğinde özelliklerimizin değerlerini bir map'de tuttuk. Ko
 		content: "daha da devam edebilriz"; 
 	}
 ```
+
+---
+| [![Back][back]](CommentLines.md) | [![Next][next]](SASSScript.md) |
+|-------|-----:|
+
+[back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png
+[next]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/next.png

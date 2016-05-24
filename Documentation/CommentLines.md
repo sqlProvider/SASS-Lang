@@ -28,8 +28,8 @@ Yukarıda ki yorum satırı örneğinin çıktısı aşağıdaki gibidir.
 	a{color: green; }
 ```
 
---
-| [![Back][back]](CSS.md) | [![Next][next]](#) |
+---
+| [![Back][back]](CSS.md) | [![Next][next]](SASSScript.md) |
 |-------|-----:|
 
 [back]: https://raw.githubusercontent.com/sqlProvider/SASS-Lang/master/Resources/back.png
