@@ -248,7 +248,7 @@ Yukarıdaki map örneğinde özelliklerimizin değerlerini bir map'de tuttuk. Ko
 Bütün veri tipleri eşitllik operatörünü (**`== ve !=`**) destekler, ayrıca her tipin kendine has operatörleri vardır.
 
 ---
-### 5.3.1 Number Operatorleri
+### 5.3.1 Number
 
 SASS Script çarpma `*`, bölme `/`, toplama `+`, çıkarma `-`, mod alma `%` gibi aritmatik işlemleri yapabilir. 
 Diğer programlama dillerinin aksine SASS Script'te sayıları sadece sayı olarak tutmak zorunda kalmıyoruz. 
