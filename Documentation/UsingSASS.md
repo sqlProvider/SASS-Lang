@@ -3,18 +3,17 @@
 SASS bir kaç yol ile kullanılabilir ve CSS dosyaları üretmeye başlayabilir.
 Biz bu dökümantasyon veya eğitim süreceinde **`NodeJS`** ve **`Gulp`** ile SASS kullanımını öğreneceğiz.
 
-İlk olarak **NodeJS**'i bilgisayarınıza kurmalı ve **Gulp** paketini yüklemelisinz.
+İlk olarak NodeJS'i bilgisayarınıza kurmalı ve Gulp paketini yüklemelisinz.
 
 Kurulum ve kullanım talimatları;
 
- * Buradaki [adresten][nodejslink] NodeJs'in LTS(Stable) sürümünü indirip kurun.
+ * Buradaki [adresten][nodejslink] NodeJs'in **LTS(Stable)** sürümünü indirip kurun.
  * Teminali/Komut satırını açın ve aşağıdaki komutu çalıştırın.
 ```bash
 $ sudo npm i -g gulp
 ```
 
 Bu aşamadan sonra proje gelişme sürecine başlanabilir.
-
 
 > Buradaki [adresten](http://sass-lang.com/install) application veya command line arayüzlerini inceleyebilir ve diğer kullanım şekilleri hakkında bilgi alabilirsiniz.
 
@@ -42,7 +41,7 @@ Terminal veya komut satırı ile aranız iyi değilse aynı işi yapan arayüz p
 ---
 ## 2.1 Npm Projesi Oluşturma
 
-`Gulp` modülünü daha önce kurmuştuk. Şimdi Gulp'un yardımcı modüllerini kuracağız, sadece bize gereken modülleri. 
+Gulp modülünü daha önce kurmuştuk. Şimdi Gulp'un yardımcı modüllerini kuracağız, sadece bize gereken modülleri. 
 
 NPM projesi oluşturmak bizim modülleri yönetmemizi kolaylaştıracak ve bir sonraki projede de aynı konfigürasyonları kullanacaksak bir daha baştan uğraşmamıza gerek kalmayacak.
 
@@ -71,7 +70,7 @@ Bu komut şu şekilde bir çıktı verecektir ve burdaki satırları tek tek dol
 	author: Semih KEŞKEK
 	license: (BSD-2-Clause)
 	
- * **Name**: (deneme) kısmına projenizin adını küçük harflerle girmeniz gerekiyor. 
+ * **Name**: projenizin adını küçük harflerle girmeniz gerekiyor. 
  * **Version**: projenizin versiyon numrasını tutar.
  * **Description**: Projenizin kısa açıklamasıdır.
  * **Entry Point**: Eğer NodeJS tabanlı bir proje ise projenizin başlangıç dosyasıdır.
@@ -112,7 +111,7 @@ Bu verileri girdikten sonra NPM bize bir özet sunar;
 
 	Is this ok? (yes) 
 
-**`Is this ok? (yes)`** satırını boş bırakıp veya **`yes`** yazıp **`Enter`** tuşuna bastıktan sonra **`package.json`** dosyamız oluşmuş olur.
+**`Is this ok? (yes)`** satırını boş bırakıp veya **`yes`** yazıp **`Enter`** tuşuna bastıktan sonra NPM **`package.json`** dosyasını oluşturur.
 
 Paket dosyası da oluşturduktan sonra artık Gulp'un yardımcı modüllerini kurmamız gerekiyor.
 
@@ -137,6 +136,7 @@ Buradaki satırları açıklayacak olursak;
 | gulp-notify     | : | Gulp ile sistem bildirimi çıkarmak için kullanılır.                                                      |
 
 Bu komutu çalıştırdıktan sonra bulunduğumuz klasörde **`node_modules`** adında bir klasör oluşur. Bütün paketlerimiz bu klasörün içine kurulmuştur.
+> NPM modüllerinin neler olduğunu öğrenmek ve araştırmak için [burayı](http://npmjs.com/) ziyaret edebilirsiniz.
 
 ---
 ## 2.2 Önbellekleme
@@ -146,7 +146,7 @@ SASS gelişmiş bir önbellekleme yapısı ile beraber gelir. Büyük projelerde
 SASS dosyaları derledikten sonra her dosyanın derlenmesini sırası ile birleştirir. 
 Bu birleştirmeden önce her dosyadan gelen farklı sonuçları `.sass-cache` dosyasına yazar. 
 Bunun yararı ise büyük dosyalar ile çalışırken değişiklik yapmadığımız halde dosyanın baştan derlenme sorununu ortadan kaldırmaktır.
-NodeJS ile SASS derlerken varsayılan olarak `Caching` mekanizması kapalıdır. Ayarladan açmak gerekir. Buna daha sonra değineceğiz. 
+NodeJS ile SASS derlerken varsayılan olarak önbellekleme mekanizması kapalıdır. Ayarladan açmak gerekir. Buna daha sonra değineceğiz. 
 
 ---
 ## 2.3 Ek Seçenekler

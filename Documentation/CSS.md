@@ -109,14 +109,14 @@ Yukarıdaki satırlarda `&` karakteri bir üstü yani `a` tagına referanstır. 
 ```
 --
 
-`&` karakterini referans olarak almayı öğrendik. Bu karakter referans olduğu kuralı string olarak döndürür. `&` karakterinin en kompleks kullanımı burada dervreye girer.
+& karakteri referans olduğu kuralı string olarak döndürür. & karakterinin en kompleks kullanımı burada dervreye girer.
 ```scss
 	#main {
 		color: black;
 		&-sidebar { border: 1px solid; }
 	}
 ```
-`&` karakteri string olarak bir üst kuralı döndürdü ve olduğu yere kuralı yapıştırdı. CSS'e derlenmiş haline göz atalım.
+& karakteri string olarak bir üst kuralı döndürdü ve olduğu yere kuralı yapıştırdı. CSS'e derlenmiş haline göz atalım.
 ```css
 	#main {
 		color: black; 
@@ -128,7 +128,7 @@ Yukarıdaki satırlarda `&` karakteri bir üstü yani `a` tagına referanstır. 
 `#main-sidebar` `#main`'nin içerisinde bir kural olmak yerine kendi başına bir kural oldu. Bunun nedeni `&` karakterinin ilk olarak bir üstteki kural ile değiştirilmesidir.
 `&-sidebar` yerine `&.sidebar` yazsaydık bu sefer `main` ID'sine sahip aynı zamanda `sidebar` class'ını almış bir elementi seçmiş olacaktık. Yani kural olarak bize `#main.sidebar` dönecekti.
 
-Burada yeni bir ID'nin oluşmasının nedeni `$` karakterinin SASS tarafından `#main`'e dönüştürülmesidir.
+Burada yeni bir ID'nin oluşmasının nedeni `&` karakterinin SASS tarafından `#main`'e dönüştürülmesidir.
 
 ---
 ## 3.3 İç İçe Özellikler
