@@ -303,7 +303,8 @@ Yukarıdaki kod derlendiğinde aşağıdaki çıktıyı verir.
 		font: 12px/30px;
 	}
 ```
-> `#{}` ifadesi diğer programlama dillerindeki `toString()` fonksiyonuna karşılık gelir.
+> `#{}` ifadesi diğer programlama dillerindeki `toString()` fonksiyonuna karşılık gelir. 
+> İfadeyi detaylı öğrenmek için [5.6 İnterpolasyon](#56-İnterpolasyon) bölümüne bakabilirsiniz.
 
 ---
 #### 5.3.1.2 Toplama ve Çıkarma
