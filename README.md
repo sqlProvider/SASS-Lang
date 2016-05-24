@@ -21,14 +21,13 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 	3. [İç İçe Özellikler](../master/Documentation/CSS.md#İç-İçe-Özellikler)
 * [**Yorum Satırları**](../master/Documentation/CommentLines.md)
 * **SASS Script**
-	1. İnteraktif Shell
-	2. Değişkenler: $
-	3. Veri Tipleri
+	1. Değişkenler: $
+	2. Veri Tipleri
 		1. Strings
 		2. Lists
 		3. Maps
 		4. Colors
-	4. Operatörler
+	3. Operatörler
 		1. Sayı Operatörleri
 			1. Çarpma ve Bölme
 			2. Toplama ve Çıkarma
@@ -36,12 +35,12 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 		3. String Operatörler
 		4. Bolean Operatörler
 		5. Liste Operatörleri
-	5. Parantezler
-	6. Fonksiyonlar
+	4. Parantezler
+	5. Fonksiyonlar
 		1. Parametre Kullanma
-	7. İnterpolasyon
-	8. SassScript'te & Kullanımı
-	9. Default Değişkenler
+	6. İnterpolasyon
+	7. SassScript'te & Kullanımı
+	8. Default Değişkenler
 * **Kurallar**
 	1. @import
 		1. Kısmı
