@@ -11,22 +11,25 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 
 * [**Syntax**](../master/Documentation/Syntax.md)
 * [**SASS Kullanımı**](../master/Documentation/UsingSASS.md)
-	1. [NPM Projesi Oluşturma](../master/Documentation/UsingSASS.md#npm-projesi-oluşturma)
-	2. [Önbellekleme](../master/Documentation/UsingSASS.md#Önbellekleme)
-	3. [Ek Seçenekler](../master/Documentation/UsingSASS.md#ek-seçenekler)
-	5. [Encoding](../master/Documentation/UsingSASS.md#encoding)
+	1. [NPM Projesi Oluşturma](../master/Documentation/UsingSASS.md#21-npm-projesi-oluşturma)
+	2. [Önbellekleme](../master/Documentation/UsingSASS.md#22-Önbellekleme)
+	3. [Ek Seçenekler](../master/Documentation/UsingSASS.md#23-ek-seçenekler)
+	4. [Encoding](../master/Documentation/UsingSASS.md#24-encoding)
 * [**CSS**](../master/Documentation/CSS.md)
-	1. [İç İçe Kurallar](../master/Documentation/CSS.md#İç-İçe-kurallar)
-	2. [Evebeyn Refesansı: &](../master/Documentation/CSS.md#evebeyn-referansı-)
-	3. [İç İçe Özellikler](../master/Documentation/CSS.md#İç-İçe-Özellikler)
+	1. [İç İçe Kurallar](../master/Documentation/CSS.md#31-İç-İçe-kurallar)
+	2. [Evebeyn Refesansı: &](../master/Documentation/CSS.md#32-evebeyn-referansı-)
+	3. [İç İçe Özellikler](../master/Documentation/CSS.md#33-İç-İçe-Özellikler)
 * [**Yorum Satırları**](../master/Documentation/CommentLines.md)
-* **SASS Script**
-	1. Değişkenler: $
-	2. Veri Tipleri
-		1. Strings
-		2. Lists
-		3. Maps
-		4. Colors
+* [**SASS Script**](../master/Documentation/SASSScript.md)
+	1. [Değişkenler: $](../master/Documentation/SASSScript.md#51-değişkenler-)
+	2. [Veri Tipleri](../master/Documentation/SASSScript.md#52-veri-tipleri)
+		1. [Numbers](../master/Documentation/SASSScript.md#521-numbers)
+		2. [Strings](../master/Documentation/SASSScript.md#522-strings)
+		3. [Colors](../master/Documentation/SASSScript.md#523-colors)
+		4. [Booleans](../master/Documentation/SASSScript.md#524-booleans)
+		5. [Nulls](../master/Documentation/SASSScript.md#525-nulls)
+		6. [Lists](../master/Documentation/SASSScript.md#526-lists)
+		7. [Maps](../master/Documentation/SASSScript.md#527-maps)
 	3. Operatörler
 		1. Sayı Operatörleri
 			1. Çarpma ve Bölme
