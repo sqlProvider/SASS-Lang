@@ -1,4 +1,4 @@
-## Syntax
+## 1. Syntax
 
 SASS iki farklı syntax'a izin verir. 
 

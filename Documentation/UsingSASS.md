@@ -1,4 +1,4 @@
-# SASS Kullanımı
+# 2. SASS Kullanımı
 
 SASS bir kaç yol ile kullanılabilir ve CSS dosyaları üretmeye başlayabilir.
 Biz bu dökümantasyon veya eğitim süreceinde **`NodeJS`** ve **`Gulp`** ile SASS kullanımını öğreneceğiz.
@@ -41,7 +41,7 @@ Terminal veya komut satırı ile aranız iyi değilse aynı işi yapan arayüz p
 
 --
 
-# Npm Projesi Oluşturma
+## 2.1 Npm Projesi Oluşturma
 
 `Gulp` modülünü daha önce kurmuştuk. Şimdi Gulp'un yardımcı modüllerini kuracağız, sadece bize gereken modülleri. 
 
@@ -141,7 +141,7 @@ Bu komutu çalıştırdıktan sonra bulunduğumuz klasörde **`node_modules`** a
 
 -- 
  
-# Önbellekleme
+## 2.2 Önbellekleme
 	
 SASS gelişmiş bir önbellekleme yapısı ile beraber gelir. Büyük projelerde payı aşırı derecede hissedilir.
 
@@ -152,15 +152,15 @@ NodeJS ile SASS derlerken varsayılan olarak `Caching` mekanizması kapalıdır.
 
 --
 
-# Ek Seçenekler
+## 2.3 Ek Seçenekler
 
 SASS beraberinde onlarca ek seçenek ile beraber gelir. Bizim en çok işimize yaracak olanlara altta değineceğiz. 
 
-### :style
+##### :style
 
 Derlemeden sonra CSS'in çıkış stilini ayarlar. CSS'i derleme sürecinde sıkıştırabilir, tek satır hale getirebilir veya açık bir şekilde bırakabiliriz.
 
-### :cache 
+##### :cache 
 
 Derlerken her dosyanın ayrı ayrı derlenmiş halini tutar ve değişiklik yapılmamışsa derlemek ile bir daha uğraşmaz hazır olanı kullanır.
 
@@ -168,7 +168,7 @@ Diğer seçeneklere [buradaki][OptionsLink] bağlantıdan ulaşabilirsiniz.
 
 --
 
-# Encoding
+## 2.4 Encoding
 
 Türkçe karakter sorunu günümüzde baş belası bir sorun olurken SASS varsayılan olarak dosyaları `UTF-8` olarak derler. Türkçe karakterler olduğu gibi kalır ekstradan iş yükü harcatmaz.
 

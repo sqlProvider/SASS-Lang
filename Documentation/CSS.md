@@ -1,8 +1,8 @@
-# CSS 
+# 3. CSS 
 
 Projemiz tamam ve çalışma ortamımızı da ayarladık atık SASS ile nasıl CSS oluşturacağımızı öğrenmek kaldı.
 
-## İç İçe Kurallar
+## 3.1 İç İçe Kurallar
 
 SASS iç içe kurallar tanımlamıza olanak tanır. Karmaşık CSS tanımlarını ortadan kaldırmak için geliştirilmiş bir özelliktir. SASS'ın en çok kullanılan özellliği diyebiliriz. Örneği inceleyecek olursak;
 ```sass
@@ -55,7 +55,7 @@ Yazdığımız satırlar derlendikten sonra aşağıdaki CSS'e çevrilir.
 
 --
 
-## Evebeyn Referansı: &
+## 3.2 Evebeyn Referansı: &
 
 Yazdığımız bir kuralın içinden bir üstteki kurala etki etmek için `&` karakteri kullanılır. 
 Bu işaret class içerisindeki bir fonksiyon içinde `this` kullanmaya benzer. 
@@ -132,7 +132,7 @@ Yukarıdaki satırlarda `&` karakteri bir üstü yani `a` tagına referanstır. 
 
 Burada yeni bir ID'nin oluşmasının nedeni `$` karakterinin SASS tarafından `#main`'e dönüştürülmesidir.
 
-## İç İçe Özellikler
+## 3.3 İç İçe Özellikler
 
 Kuralları iç içe yazabildiğimiz gibi özellikleri de iç içe yazabiliriz. 
 CSS'de çok fazla tekrar eden özellikler vardır mesela bunlardan birisi `background`. Bu özellik tireden sonra 10-15 farklı özelliğe evrilir.

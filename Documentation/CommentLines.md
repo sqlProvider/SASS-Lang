@@ -1,4 +1,4 @@
-# Yorum Satırları /* */ ve //
+# 4. Yorum Satırları /* */ ve //
 
 SASS iki tür yorum satırını destekler. CSS'in gerçek yorum satırı olan **` /* */ `** ve SASS ile beraber gelen **` // `**. 
 Çok satırlı yorum satırları derlenirken olduğu gibi bırakılır.
