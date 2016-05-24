@@ -1,15 +1,15 @@
 # 5. SASS Script
 
 CSS'in basit syntax'ına eklemeler yapılarak geliştirilmiştir.
-SASS Script te değişken kullanabilir, aritmetik işlemler yapabilir, döngüler oluşturabilir, karar yapılarını ve ekstra fonksiyonları kullanabilirsiniz.
+**`SASS Script`** te değişken kullanabilir, aritmetik işlemler yapabilir, döngüler oluşturabilir, karar yapılarını ve ekstra fonksiyonları kullanabilirsiniz.
 SASS Script ayrıca kural ve özellik isimleri oluşturmada da kullanılabilir. 
 
 ---
 ## 5.1 Değişkenler: $
 
 Programlama dillerinde yer alan değişkenler bir programın neredeyse herşeyidir. 
-Orjinal CSS'de değişkenler bulunmamakta ancak SASS Script ile birlikte değişkenlerin kullanımı da dile adapte edildi.
-Değişknleri **`$`** karakteri ile kullanabiliyoruz. 
+Orjinal CSS'de değişkenler bulunmamakta ancak SASS Script ile değişkenler de kullanılabilir hale geliyor.
+Değişkenleri **`$`** karakteri ile kullanabiliyoruz. 
 SASS Script te değişken tanımlamak klasik bir CSS özelliği tanımlamaya benzer.
 
 ```sass
@@ -25,7 +25,7 @@ Tanımladığımız değişkenleri nerede istersek kullanabiliriz.
 
 Değişkenler sadece tanımlandığı seviyede ve alt seviyelerde kullanılabilir haldedir. 
 Eğer en dış seviyede bir değişken tanımlarsanız bütün seviyelerde kullanabilirsiniz. 
-Ayrıca değiken tanımınızın sonunda **`!global`** anahtar kelimesini kullanırsanız değişkenin üst seviyelerdeki değerini değiştirebilir veya 
+Ayrıca değişken tanımınızın sonunda **`!global`** anahtar kelimesini kullanırsanız değişkenin üst seviyelerdeki değerini değiştirebilir veya 
 iç seviyelerde tanımladığınız değişkeni diğer seviyelerde de kullanabilirsiniz.
 
 ```sass
@@ -98,7 +98,7 @@ Kodun çıktısını inceleyecek olursak;
 		height: 50px;
 	}
 ```
-Sadece `px` değil `%, em, vm` gibi bütün sayısal verileri tutabilirler.
+>Sadece `px` değil `%, em, vm` gibi bütün sayısal verileri tutabilirler.
 
 ---
 ### 5.2.2 Strings
@@ -241,6 +241,90 @@ Yukarıdaki map örneğinde özelliklerimizin değerlerini bir map'de tuttuk. Ko
 		content: "daha da devam edebilriz"; 
 	}
 ```
+
+---
+## 5.3 Operatörler
+
+Bütün veri tipleri eşitllik operatörünü (**`== ve !=`**) destekler, ayrıca her tipin kendine has operatörleri vardır.
+
+---
+### 5.3.1 Number Operatorleri
+
+SASS Script çarpma `*`, bölme `/`, toplama `+`, çıkarma `-`, mod alma `%` gibi aritmatik işlemleri yapabilir. 
+Diğer programlama dillerinin aksine SASS Script'te sayıları sadece sayı olarak tutmak zorunda kalmıyoruz. 
+Sayılar `px, em, %, ...` türlerinde olarabilir ve SASS Script birbirine dönüşebilir cinsler arasında aritmetik işlemler yapabilir. 
+
+Sayı değişkenleri ayrıca mantıksal operatörlerden büyüktür, küçüktür, büyük eşit ve küçük eşit (**``<, >, <=, >=``**) operatörlerini destekler.
+
+---
+#### 5.3.1.1 Çarpma ve Bölme
+
+CSS syntax'ında `/` operatörü özelliklerde kullanılmakta ayrıca SASS Script'te de bu operatör bölme işlemini yapmakta.
+Bu yüzden bölme işleminde kısıtlamalar bulunmakta bazı durumdalar CSS syntax'ı devreye girerken bazı durumlar SASS Script bölme işlemini yapmakta.
+SASS Script'in devreye 3 durum vardır bunlar;
+ * Eğer değer bir değişkendeyse veya bir fonskiyon tarafından döndürülüyorsa
+ * Eğer ifade parantez içine yazılmışsa
+ * Eğer ifade de bölme işlemi dışında başka bir işlem daha yer alıyorsa
+Örnek olarak inceleyecek olursak
+```sass
+	p{
+		font: 10px/8px; // Bölme işlemi yapılmaz
+		$width: 1000px; 
+		width: $width/2; // Bölme işlemi yapılır
+		width: round(1.5px)/2; // Bölme işlemi yapılır
+		height: (500px/2); // Bölme işlemi yapılır
+		margin-left: 5px + 8px/2px; // Bölme işlemi yapılır
+		font: (italic bold 10px/8px) // Değer liste tipinde olduğu için bölme işlemi sayılmaz
+	}
+```
+Yukarıdaki kodun CSS çıktısı aşağıdaki giib olur
+```css
+	p{
+		font: 10px/8px;
+		width: 500px;
+		width: 1px;
+		height: 250px;
+		margin-left: 9px;
+	}
+```
+--
+
+Eğer değişkenleri bölme yapmadan ama `/` işaretini kullanarak yazırmak istiyorsanız **`#{}`** ifadesini kullanmanız gerekir.
+```sass
+	p{
+		$font-size: 12px;
+		$line-height: 30px;
+		font: #{$font-size}/#{$line-height};
+	}
+```
+Yukarıdaki kod derlendiğinde aşağıdaki çıktıyı verir.  
+```css
+	p{
+		font: 12px/30px;
+	}
+```
+> `#{}` ifadesi diğer programlama dillerindeki `toString()` fonksiyonuna karşılık gelir.
+
+---
+#### 5.3.1.2 Toplama ve Çıkarma
+
+Diğer bir karışıklıpa sebep olan operatör olan çıkarma `-` operatörünün bir kaç durumu vardır. 
+Bazı durumlarda CSS'in `-` si geçerli olurken bazı durumlarda SASS Script çıkarma işlemini yapar.
+Bu durumları inceleyecek olursak;
+ * Eğer sabit değerler ile çıkarma işlemi yapılıyorsa (10px ve 8px'i ele alalım)
+  * 10px-8px ve 10px - 8px ifadesi 2px döndürür.
+  * 10px- 8px ve 10px -8px ifadesi olduğu gibi döner işlem yapılmaz.
+ * Eğer bir sabit bir değişken ile işlem yapıyorsak ($size: 10px ve 8px'i ele alalım)
+  * $size-8px ve $size- 8px ifadesi değişken bulunamadı hatası verecektir. Değişken tanımlama kurallarına göz atın.
+  * $size -8px ifadesi 10px -8px olarak döner.
+  * 8px- $size ifadesi 8px- 10px olarak döner.
+  * 8px -$size ifadesi 2px döndürür.
+  * $size - 8px ifadesi 2px döndürür.
+  * 8px - $size ifadesi 2px döndürür.
+ * Eğer iki değişken ile çalışıyorsak ($size1: 10px ve $size2: 8px)
+  * $size1-$size2, $size- $size2, $size2- $size1 ifadeleri değişken bulunamadı hatası verecektir.
+  * $size1 - $size2, $size1 -$size2 ve $size2 -$size1 ifadeleri düzgün bir şekilde işlemi yapar.
+  * Diğer durumların hepsi değerleri işlem yapmadan ekrana yazdıracaktır.
 
 ---
 | [![Back][back]](CommentLines.md) | [![Next][next]](SASSScript.md) |
