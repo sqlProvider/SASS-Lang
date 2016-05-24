@@ -30,14 +30,14 @@ SASS büyük CSS sayfalarınızı organize eder ve kısa bir sürede hazır hale
 		5. [Nulls](../master/Documentation/SASSScript.md#525-nulls)
 		6. [Lists](../master/Documentation/SASSScript.md#526-lists)
 		7. [Maps](../master/Documentation/SASSScript.md#527-maps)
-	3. Operatörler
-		1. Sayı Operatörleri
-			1. Çarpma ve Bölme
-			2. Toplama ve Çıkarma
-		2. Renk Operatörleri
+	3. [Operatörler](../master/Documentation/SASSScript.md#53-operatörler)
+		1. [Number](../master/Documentation/SASSScript.md#531-number)
+			1. [Çarpma ve Bölme](../master/Documentation/SASSScript.md#5311-Çarpma-ve-bölme)
+			2. [Toplama ve Çıkarma](../master/Documentation/SASSScript.md#5311-toplama-ve-Çıkarma)
+		2. Color Operatörleri
 		3. String Operatörler
-		4. Bolean Operatörler
-		5. Liste Operatörleri
+		4. Boolean Operatörler
+		5. List Operatörleri
 	4. Parantezler
 	5. Fonksiyonlar
 		1. Parametre Kullanma
