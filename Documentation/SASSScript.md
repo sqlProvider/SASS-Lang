@@ -328,6 +328,39 @@ Bu durumları inceleyecek olursak;
   * Diğer durumların hepsi değerleri işlem yapmadan ekrana yazdıracaktır.
 
 ---
+### 5.3.1 Color
+
+Bütün aritmatik işlemler renk değerlerini destekler. 
+Bunun anlamı kırmızı ve maviyi toplayabileceğiniz(karıştırmak), çıkartabileceğiniz ve diğer işlemleri yapabileceğinizdir.
+Örneğin;
+```scss
+	p{
+		color: #010203 + #040506;
+	}
+```
+yukarıdaki örnek şu şekilde hesaplanır: (01 + 04) (02 + 05) (03 + 06) = `#050709`
+```css
+	p{
+		color: #050709;
+	}
+```
+
+Bu işlemler genellikle [renk fonksiyonları](#) için kullanılır.
+Aritmatik işlemler ayrıca renk ve sayı içinde kullanılabilirdir.
+```scss
+	p{
+		color: #010203 * 2;
+	}
+```
+yukarıdaki işlem şu şekilde hesaplanacaktır. (01 * 2) (02 * 2) (03 * 2) ve kodun çıktısı aşağıdaki gibi olacaktır.
+```css
+	p{
+		color: #020406;
+	}
+```
+
+
+---
 | [![Back][back]](CommentLines.md) | [![Next][next]](SASSScript.md) |
 |-------|-----:|
 
